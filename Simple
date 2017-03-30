@@ -1,27 +1,13 @@
-import random
+spam = ['apples', 'bananas', 'tofu', 'cats']
+toast = ['list','list2','list3']
+listicle = ['fresh', 'sweet', 'creamy', 'butter', 'cheese', 'hashbrowns']
 
-print ('A hideous monster approaches.')
-print ('You are armed with a hammer, a dagger and a crossbow')
-monstertype = random.randint(0,2)
+def comma(list):
+    counter = 0
+    for counter in range(len(list)-1):
+        print (list[counter] +', ', end='')
+    print ( 'and ' + list[counter+1])
 
-if monstertype == 0:
-    print ('The monster has a thick shell like a crab that will need a solid blow to destroy it.')
-elif monstertype== 1:
-    print ('The monster flies through the air above you')
-elif monstertype ==2:
-    print ('The monster scuttles rapidly towards you. You will need a fast weapon to defeat it')
-print ('Which weapon do you use? Your hammer, dagger or crossbow?')
-weapon = input()
-weapontype = ['hammer', 'crossbow', 'dagger']
-
-if weapon == weapontype[monstertype] and monstertype ==0:
-    print ('You shatter the beasts shell with a mighty blow! You are safe.')
-elif weapon == weapontype[monstertype] and monstertype ==1:
-    print ('You shoot a bolt through the beasts wing, bringing it down. You are safe.')
-elif weapon == weapontype[monstertype] and monstertype ==2:
-    print ('Thinking quickly you lunge at the beast with your dagger, mortally wounding it. You are safe.')
-    
-elif weapon != weapontype[monstertype] and weapon in weapontype:
-    print ('The monster laughs at your failed attack and devours you.')
-else:
-    print ('You are too slow to act and the monster devours you.')
+comma(spam)
+comma(listicle)
+comma(toast)
