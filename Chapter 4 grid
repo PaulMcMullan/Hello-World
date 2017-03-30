@@ -10,9 +10,7 @@ grid = [['.', '.', '.', '.', '.', '.'],
 
 counter =0
 counter2 = 0
-for counter2 in range (0,6):
-    for counter in range(0,9):
-        print (grid[counter][counter2], end='')
-        counter = counter + 1
+for i in range (0,6):
+    for m in range(0,9):
+        print (grid[m][i], end='')
     print('')
-    counter2 += 1
