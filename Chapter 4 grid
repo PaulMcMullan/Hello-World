@@ -1,0 +1,18 @@
+grid = [['.', '.', '.', '.', '.', '.'],
+        ['.', 'O', 'O', '.', '.', '.'],
+        ['O', 'O', 'O', 'O', '.', '.'],
+        ['O', 'O', 'O', 'O', 'O', '.'],
+        ['.', 'O', 'O', 'O', 'O', 'O'],
+        ['O', 'O', 'O', 'O', 'O', '.'],
+        ['O', 'O', 'O', 'O', '.', '.'],
+        ['.', 'O', 'O', '.', '.', '.'],
+        ['.', '.', '.', '.', '.', '.']]
+
+counter =0
+counter2 = 0
+for counter2 in range (0,6):
+    for counter in range(0,9):
+        print (grid[counter][counter2], end='')
+        counter = counter + 1
+    print('')
+    counter2 += 1
