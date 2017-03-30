@@ -1,0 +1,12 @@
+spam = ['apples', 'bananas', 'tofu', 'cats']
+toast = ['list','list2','list3']
+listicle = ['fresh', 'sweet', 'creamy', 'butter', 'cheese', 'hashbrowns']
+
+def comma(list):
+    for i in range(len(list)-1):
+        print (list[i] +', ', end='')
+    print ( 'and ' + list[i+1])
+
+comma(spam)
+comma(listicle)
+comma(toast)
